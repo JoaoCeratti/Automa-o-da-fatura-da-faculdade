@@ -16,20 +16,26 @@ ${button_copiar}        id=copy-button
 abrir google e entrar no site    
     Open Browser    https://lyaluno.unipar.br/aluno/#/login    chrome
 preencher form
-    Input Text    ${input_cpf}    "CPF do Academico"
-    Input Password    ${input_password}    "senha do Academico"
+    Input Text    ${input_cpf}    10927512971
+    Input Password    ${input_password}    10927512971
 
 clicar em login
     Click Element    ${button_input}
+    Wait Until Element Is Enabled    ${button_financeiro}
 
 clicar nas financias
     Click Element    ${button_financeiro}
+cobrancas
     Click Element    ${button_cobrancas}
     Sleep    1
     Click Element    ${button_conta}
+entra no codigo pix
     Scroll Element Into View    ${button_pix}
-    Sleep    1
     Click Element    ${button_pix}
+    Sleep    1
+copiar codigo pix
+    Scroll Element Into View    ${button_copiar}
+    Click Element    ${button_copiar}
 
 *** Test Cases ***
 Cenario 1:Entrar no site da unipar
@@ -37,10 +43,7 @@ Cenario 1:Entrar no site da unipar
     Maximize Browser Window
     preencher form    
     clicar em login
-    Wait Until Element Is Enabled    ${button_financeiro}
     clicar nas financias 
-    Sleep    1
-    Scroll Element Into View    ${button_copiar}
-    Click Element    ${button_copiar}
-    Sleep    1
-    
+    cobrancas
+    entra no codigo pix
+    copiar codigo pix
