@@ -16,8 +16,8 @@ ${button_copiar}        id=copy-button
 abrir google e entrar no site    
     Open Browser    https://lyaluno.unipar.br/aluno/#/login    chrome
 preencher form
-    Input Text    ${input_cpf}    10927512971
-    Input Password    ${input_password}    10927512971
+    Input Text    ${input_cpf}    #input your cpf here
+    Input Password    ${input_password}    #input your password here
 
 clicar em login
     Click Element    ${button_input}
