@@ -1,6 +1,9 @@
-# Automatic College Payment 
-- Script criado para abrir e pagar automaticamente sua fatura da faculdade
-- Para utilizado, alterar o valor das variaveis "CPF" e "PASSWORD"
-- totalmente seguro, funcionalidade simples e de facil manuseio e acesso.
-- Para estudantes preguiçosos que querem economizar 1 minuto de vida toda vez que for pagar a mensalidade
+# 🎓 Automatic College Payment
 
+- Script designed to automatically open and pay your college fee.
+  
+- How to use: Simply modify the CPF and PASSWORD variables with your own data.
+  
+- Completely safe, simple, and easy to use!
+  
+- For students who want to save time and avoid manual payment every month. 
